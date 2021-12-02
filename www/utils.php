@@ -22,7 +22,8 @@ function getPDO()
   );
 }
 
-define("CODE_SECRET", 13);
+define("CODE_SECRET", 13); //la clé doit être stocké dans une bdd. On va plutot utiliser 
+//le hachage avec du salage plutot que le chiffrement 
 
 function code($data)
 {
